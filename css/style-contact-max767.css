@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+@media screen and (max-width:767px){
+  
+  /* common start */
+  main{
+    line-height: 1.7em;
+    overflow: hidden;
+  }
+
+  .font-bold{
+    font-weight: 600;
+  }
+  .font-red{
+    color: #f00;
+  }
+}
+
+@media screen and (max-width:380px){
+  .cancel-br-380px{
+    display: none;
+  }
+}
+@media screen and (max-width:410px){
+  .cancel-br-410px{
+    display: none;
+  }
+}
+@media screen and (max-width:450px){
+  .cancel-br-450px{
+    display: none;
+  }
+}
+@media screen and (max-width:500px){
+  .cancel-br-500px{
+    display: none;
+  }
+}
+@media screen and (max-width:540px){
+  .cancel-br-540px{
+    display: none;
+  }
+}
+@media screen and (max-width:570px){
+  .cancel-br-570px{
+    display: none;
+  }
+}
+@media screen and (max-width: 600px){
+  .cancel-br-600px{
+    display: none;
+  }
+}
+/* common end */
+
+/* header start */
+@media screen and (max-width:767px){
+  header{
+    background: #fff;
+    -webkit-box-shadow: 0 1px 5px 0 #ebebeb;
+            box-shadow: 0 1px 5px 0 #ebebeb;
+  }
+/* header end */
+
+/* main start */
+  main{
+    background-color: #ebeff7;
+  }
+  #page-contact-container{
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 481px);
+    overflow: hidden;
+    margin-top: 100px;
+    background-image: url(../img/contents/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px 1280px;
+    background-position: left 72% bottom 0%;
+    position: relative;
+  }
+  #page-contact-container::after{
+    content: "";
+    display: block;
+    width: calc(100% - 20px);
+    height: 100%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: -1;
+  }
+  
+/* breadcrumbs start */
+  #breadcrumbs{
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 20px 0 0 20px;
+  }
+  #breadcrumbs ul{
+    overflow: hidden;
+  }
+  #breadcrumbs ul li{
+    float: left;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+  }
+  #breadcrumbs ul li:nth-of-type(2)::before{
+    content: "＞";
+    margin-right: 0.5em;
+  }
+  #breadcrumbs ul li:nth-of-type(3)::before{
+    content: "＞";
+    margin-right: 0.5em;
+  }
+/* breadcrumbs end */
+
+/* contact-form start */
+  #contact-form{
+    width: calc(100% - 20px);
+    margin: 30px auto 60px;
+    padding: 0;
+    overflow: hidden;
+  }
+  #contact-form h1{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1em;
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+  #contact-form h1 span{
+    line-height: 1.7em;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  #page-contact-message{
+    margin: 30px auto 0;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px){
+  #page-contact-message{
+    margin: 30px auto 0;
+    width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 767px){
+  #page-contact-message #contact-notes{
+    font-size: 0.625rem;
+    line-height: 1.625em;
+    margin: 1em 0 0;
+  }
+  #page-contact-message #contact-notes li{
+    margin-left: 1em;
+  }
+  #page-contact-message #contact-notes li::before{
+    content: "※";
+    list-style-position: outside;
+    margin: 0 0 0 -1em;
+  }
+  #form-inner{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #form-inner{
+    width: calc(100% - 40px);
+  }
+}
+
+@media screen and (max-width: 767px){
+  #form-inner dl{
+    margin: 30px 0 0 0;
+  }
+  #form-inner dl .form-boxs{
+    clear: both;
+    margin: 0 0 1em 0;
+  }
+  #form-inner dl dt{
+    float: left;
+    width: 10em;
+    padding: 0.5em 0;
+    font-weight: 500;
+  }
+  #form-inner dl dd{
+    margin-left: 10em;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #form-inner dl dt{
+    float: none;
+  }
+  #form-inner dl dd{
+    margin-left: 0em;
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  #form-inner dl dd input:not(.except){
+    width: 300px;
+    padding: 0.5em;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #form-inner dl dd input:not(.except){
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #form-inner dl dd textarea{
+    width: 100%;
+    height: 200px;
+    padding: 0 0.5em;
+    line-height: 2em;
+  }
+  #form-inner dl dd:last-of-type{
+    line-height: 2em;
+  }
+  #form-inner dl dd:last-of-type a{
+    color: #316ceb;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  #form-submit{
+    text-align: center;
+    margin: 20px calc(50% - 5em) 0;
+    width: 10em;
+    height: 2.6em;
+    color: #fff;
+    background-color: #316ceb;
+    border: 1px solid #316ceb;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s,
+                color 0.3s ease 0s;
+  }
+  #form-submit:hover{
+    background-color: #fff;
+    color: #316ceb;
+    font-weight: 500;
+  }
+/* contact-form end */
+  
+/* conf-send-error start */
+  #page-confirm-contents{
+    margin: 30px auto 0;
+    width: calc(100% - 20px);
+    min-width: 0;
+  }
+  #page-confirm-contents #confirm-message{
+    text-align: center;
+  }
+  #page-send-contents #send-message{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+  }
+  #page-error-contents #error-message{
+    text-align: center;
+    margin-top: 30px;
+  }
+  #page-error-contents #error-place{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  #page-confirm-contents dl{
+    margin: 30px auto 0;
+    width: 100%;
+    min-width: 0;
+  }
+  #page-confirm-contents dl .form-boxs{
+    clear: both;
+    margin: 0 0 1em 0;
+  }
+  #page-confirm-contents dl dt{
+    float: left;
+    width: 11em;
+    padding: 0.5em 0;
+    font-weight: bold;
+  }
+  #page-confirm-contents dl dd{
+    margin-left: 11em;
+    width: calc(100% - 11em);
+    padding: 0.5em;
+  }
+}
+  
+@media screen and (max-width: 500px){
+  #page-confirm-contents dl dt{
+    float: none;
+  }
+  #page-confirm-contents dl dt::before{
+    content: "◆";
+  }
+  #page-confirm-contents dl dd{
+    margin-left: 0.5em;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #form-response{
+    width: 21em;
+    margin: 30px auto;
+    overflow: hidden;
+  }
+  #form-response .submit-button{
+    width: 8em;
+    height: 2.6em;
+    color: #fff;
+    background-color: #316ceb;
+    border: 1px solid #316ceb;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s,
+                color 0.3s ease 0s;
+  }
+  #form-response .submit-button:hover{
+    background-color: #fff;
+    color: #316ceb;
+    font-weight: 500;
+  }
+  #form-response #conf-back{
+    float: left;
+  }
+  #form-response #conf-submit{
+    float: right;
+  }
+  #form-response #send-submit{
+    margin: 20px calc(50% - 4.5em) 0;
+  }
+  #form-response #error-submit{
+    margin: 20px calc(50% - 4.5em) 0;
+  }
+/* conf-send-error end */
+/* main end */
+}

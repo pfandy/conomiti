@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Yantramanav&display=swap');
+/* font-family: 'Yantramanav', sans-serif;*/
+
+@media screen and (min-width:1121px){
+
+/* common start */
+  main{
+    line-height: 1.7em;
+    overflow: hidden;
+  }
+
+  .font-bold{
+    font-weight: 600;
+  }
+  .font-red{
+    color: #f00;
+  }
+}
+
+@media screen and (max-width:410px){
+  .cancel-br-410px{
+    display: none;
+  }
+}
+@media screen and (max-width:450px){
+  .cancel-br-450px{
+    display: none;
+  }
+}
+@media screen and (max-width:540px){
+  .cancel-br-540px{
+    display: none;
+  }
+}
+@media screen and (max-width:570px){
+  .cancel-br-570px{
+    display: none;
+  }
+}
+@media screen and (max-width: 600px){
+  .cancel-br-600px{
+    display: none;
+  }
+}
+/* common end */
+
+/* header start */
+@media screen and (min-width:1121px){
+  header{
+    background: #fff;
+    -webkit-box-shadow: 0 1px 5px 0 #ebebeb;
+            box-shadow: 0 1px 5px 0 #ebebeb;
+  }
+/* header end */
+
+/* main start */
+  main{
+    background-color: #ebeff7;
+  }
+
+/* breadcrumbs start */
+  #breadcrumbs{
+    width: 1080px;
+    margin: 100px auto 0;
+    padding: 30px 0 0;
+  }
+  #breadcrumbs ul{
+    overflow: hidden;
+  }
+  #breadcrumbs ul li{
+    float: left;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+  }
+  #breadcrumbs ul li:nth-of-type(2)::before{
+    content: "＞";
+    margin-right: 0.5em;
+  }
+  #breadcrumbs ul li:nth-of-type(3)::before{
+    content: "＞";
+    margin-right: 0.5em;
+  }
+/* breadcrumbs end */
+
+/* privacy policy start */
+  #privacy-policy{
+    width: 1080px;
+    margin: 70px auto;
+    padding: 50px 100px;
+    background-color: #fff;
+  }
+  #privacy-policy h1{
+    text-align: center;
+    line-height: 1em;
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+  #privacy-policy h1 span{
+    line-height: 1.7em;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #privacy-policy #pp-message{
+    margin-top: 50px;
+    line-height: 1.8em;
+  }
+  #privacy-policy dl{
+    margin-top: 30px;
+    line-height: 1.8em;
+  }
+
+  #privacy-policy dl dt{
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin: 30px 0 10px 0;
+    padding-left: 1em;
+    border-left: 6px solid #316ceb;
+    line-height: 1.8em;
+  }
+
+/*薄れていくUnderline
+  #pp-inner dl dt::after{
+    display: block;
+    height: 2px;
+    width: 60%;
+    background: linear-gradient(to right, #316ceb, rgba(255, 255, 255, 0));
+    content: "";
+    margin-left: -1em;
+  }
+*/
+  #privacy-policy dl dd{
+    padding: 1em 1em 2em 1em;
+  }
+  #privacy-policy dl dd ul{
+    margin-top: 10px;
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 1em;
+  }
+  #privacy-policy dl dd address{
+    margin-top: 20px;
+    padding-left: 1em;
+  }
+/* privacy policy end */
+
+
+  
+  
+/* contact-form start */
+  #contact-form{
+    width: 1080px;
+    margin: 100px auto 50px;
+    padding: 0;
+  }
+  #contact-form h2{
+    margin-top: 100px;
+    text-align: center;
+    line-height: 1em;
+  }
+  #contact-form h2 span{
+    line-height: 1.7em;
+    text-align: center;
+  }
+  #page-contact-message{
+    margin: 50px auto 0;
+    width: 70%;
+  }
+  #page-contact-message #contact-notes{
+    font-size: 0.75rem;
+    margin: 1em 0 0;
+  }
+  #page-contact-message #contact-notes li{
+    margin-left: 1em;
+  }
+  #page-contact-message #contact-notes li::before{
+    content: "※";
+    list-style-position: outside;
+    margin: 0 0 0 -1em;
+  }
+  #form-inner{
+    width: 70%;
+    margin: 0 auto 0 auto;
+  }
+  #form-inner dl{
+    margin: 50px 0 0 0;
+  }
+  #form-inner dl .form-boxs{
+    clear: both;
+    margin: 0 0 1em 0;
+  }
+  #form-inner dl dt{
+    float: left;
+    width: 13em;
+    padding: 0.5em 0;
+    font-weight: 500;
+  }
+  #form-inner dl dd{
+    margin-left: 13em;
+  }
+  #form-inner dl dd input:not(.except){
+    width: 300px;
+    padding: 0.5em;
+  }
+  #form-inner dl dd textarea{
+    width: 500px;
+    height: 200px;
+    padding: 0 0.5em;
+    line-height: 2em;
+  }
+  #form-inner dl dd:last-of-type{
+    line-height: 2em;
+  }
+  #form-inner dl dd:last-of-type a{
+    color: #316ceb;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  #form-submit{
+    text-align: center;
+    margin: 20px calc(50% - 5em) 0;
+    width: 10em;
+    height: 2.6em;
+    color: #fff;
+    background-color: #316ceb;
+    border: 1px solid #316ceb;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  }
+/* contact-form end */
+/* main end */
+}

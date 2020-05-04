@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+@media screen and (max-width:767px){
+  
+  /* common start */
+  main{
+    line-height: 1.7em;
+    overflow: hidden;
+  }
+
+  .font-bold{
+    font-weight: 600;
+  }
+  .font-red{
+    color: #f00;
+  }
+}
+
+@media screen and (max-width:410px){
+  .cancel-br-410px{
+    display: none;
+  }
+}
+@media screen and (max-width:450px){
+  .cancel-br-450px{
+    display: none;
+  }
+}
+@media screen and (max-width:500px){
+  .cancel-br-500px{
+    display: none;
+  }
+}
+@media screen and (max-width:540px){
+  .cancel-br-540px{
+    display: none;
+  }
+}
+@media screen and (max-width:570px){
+  .cancel-br-570px{
+    display: none;
+  }
+}
+@media screen and (max-width: 600px){
+  .cancel-br-600px{
+    display: none;
+  }
+}
+/* common end */
+
+/* header start */
+@media screen and (max-width:767px){
+  header{
+    background: #fff;
+    -webkit-box-shadow: 0 1px 5px 0 #ebebeb;
+            box-shadow: 0 1px 5px 0 #ebebeb;
+  }
+/* header end */
+
+/* main start */
+  main{
+    background-color: #ebeff7;
+  }
+  
+/* breadcrumbs start */
+  #breadcrumbs{
+    width: calc(100% - 20px);
+    margin: 100px auto 0;
+    padding: 20px 0 0;
+  }
+  #breadcrumbs ul{
+    overflow: hidden;
+  }
+  #breadcrumbs ul li{
+    float: left;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+  }
+  #breadcrumbs ul li:nth-of-type(2)::before{
+    content: "＞";
+    margin-right: 0.5em;
+  }
+  #breadcrumbs ul li:nth-of-type(3)::before{
+    content: "＞";
+    margin-right: 0.5em;
+  }
+/* breadcrumbs end */
+
+/* privacy policy start */
+  #privacy-policy{
+    width: calc(100% - 20px);
+    margin: 30px auto;
+    padding: 30px 40px;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 500px){
+  #privacy-policy{
+    margin: 30px auto;
+    padding: 30px 10px;
+  }
+}
+@media screen and (max-width: 767px){
+  #privacy-policy h1{
+    text-align: center;
+    line-height: 1em;
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+  #privacy-policy h1 span{
+    line-height: 1.7em;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  #privacy-policy #pp-message{
+    margin-top: 30px;
+    line-height: 1.8em;
+  }
+  #privacy-policy dl{
+    margin-top: 30px;
+    line-height: 1.8em;
+  }
+
+  #privacy-policy dl dt{
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin: 20px 0 0;
+    padding-left: 1em;
+    border-left: 6px solid #316ceb;
+    line-height: 1.8em;
+  }
+
+/*薄れていくUnderline
+  #pp-inner dl dt::after{
+    display: block;
+    height: 2px;
+    width: 60%;
+    background: linear-gradient(to right, #316ceb, rgba(255, 255, 255, 0));
+    content: "";
+    margin-left: -1em;
+  }
+*/
+  #privacy-policy dl dd{
+    padding: 1em 1em 2em 1em;
+  }
+  #privacy-policy dl dd ul{
+    margin-top: 10px;
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 1em;
+  }
+  #privacy-policy dl dd address{
+    margin-top: 20px;
+    padding-left: 1em;
+  }
+/* privacy policy end */
+/* main end */
+}
